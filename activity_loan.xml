@@ -60,15 +60,6 @@
         android:id="@+id/time_per_enter" />
 
     <TextView
-        android:text="What is your Initial Investment?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/init_invest_text"
-        android:layout_below="@+id/loan_title"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
         android:text="What is your Interest Rate (PER PERIOD)?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -105,13 +96,14 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Calculate!"
+        android:text="Calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="19dp"
-        android:id="@+id/loan_calculate" />
+        android:id="@+id/loan_calculate"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -122,5 +114,15 @@
         android:layout_below="@+id/goal_amount_text"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="What is your Initial Investment?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/init_invest_text"
+        android:layout_below="@+id/loan_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
 
 </RelativeLayout>

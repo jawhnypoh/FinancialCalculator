@@ -11,8 +11,8 @@ import android.widget.EditText;
 public class CompoundedActivity extends AppCompatActivity {
 
     double ans;
-    EditText P2, r1, t, goal2;
-    double P2_var, r1_var, t_var, goal2_var;
+    EditText P2, r1, time, goal2;
+    double P2_var, r1_var, time_var, goal2_var;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class CompoundedActivity extends AppCompatActivity {
                 // Convert inputs to doubles
                 P2_var = Double.parseDouble(P2.getText().toString());
                 r1_var = Double.parseDouble(r1.getText().toString());
-                t_var = Double.parseDouble(t.getText().toString());
+                time_var = Double.parseDouble(time.getText().toString());
                 goal2_var = Double.parseDouble(goal2.getText().toString());
 
                 calculateCompound();
@@ -64,15 +64,15 @@ public class CompoundedActivity extends AppCompatActivity {
         // r1 = Annual Interest Rate
         r1 = (EditText) findViewById(R.id.interest_rate_enter);
         // t = Amount of Time
-        t = (EditText) findViewById(R.id.time_per_enter);
+        time = (EditText) findViewById(R.id.amount_time_enter);
         // goal2 = Goal Amount
-        goal2 = (EditText) findViewById(R.id.goal_amount_enter);
+        goal2 = (EditText) findViewById(R.id.goal_enter);
     }
 
     public double calculateCompound() {
         // Continuously Compounded Equation: A = Pe^r(t)
 
-        ans = P2_var * Math.exp(r1_var * t_var);
+        ans = P2_var * Math.exp(r1_var * time_var);
 
         return ans;
     }

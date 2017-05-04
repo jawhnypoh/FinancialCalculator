@@ -68,13 +68,14 @@
         android:id="@+id/goal_enter" />
 
     <Button
-        android:text="Calculate!"
+        android:text="Calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="62dp"
-        android:id="@+id/compounded_calc" />
+        android:id="@+id/compounded_calc"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -102,7 +103,7 @@
         android:text="What is your principle investment?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:id="@+id/princ_invest_text"
         android:layout_below="@+id/compound_text"
         android:layout_alignParentLeft="true"
